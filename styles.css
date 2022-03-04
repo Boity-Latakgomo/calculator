@@ -13,8 +13,8 @@ body {
 
 .calculator-grid {
     display: grid;
-    justify-content: center;
-    align-content: center;
+    justify-content: right;
+    align-content: right;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
@@ -30,5 +30,5 @@ body {
     background-color: rgba(255, 255, 255 ,.9);
 }
 .span-two {
-    grid-column: span 2;
+    grid-column: span 2; 
 }
