@@ -18,13 +18,16 @@ class Calculator {
      this.currentOperand = this.currentOperand.toString() + number.toString()
     }
     chooseOperation(operation){
-
+      this.operation = operation
+      this.previousOperand = this.currentOperand
+      this.currentOperand = ''
     }
     compute(){
 
     }
     updateDisplay(){
         this.currentOperandTextElement.innerText = this.currentOperand
+        this.previousOperandTextElement.innerText = this.previousOperand
 
     }
 }
