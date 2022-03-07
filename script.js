@@ -1,7 +1,7 @@
 class Calculator {
     constructor( previousOperandTextElement, currentOperandTextElement ){
-        this.previousOperandTextElement = previousOperandTextElement;
-        this.currentOperandTextElement = currentOperandTextElement;
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
 
@@ -50,3 +50,9 @@ numberButtons.forEach(button => {
     })
 })
 
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
+    })
+})
