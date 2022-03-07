@@ -27,6 +27,10 @@ class Calculator {
       this.currentOperand = ''
     }
     compute(){
+        let computation
+        const prev = parseFloat(this.previousOperand)
+        const current = parseFloat(this.currentOperand)
+        if (isNaN(prev) || isNaN(current)) return
 
     }
     updateDisplay(){
