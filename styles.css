@@ -11,7 +11,7 @@ body {
     background: linear-gradient(to right, #9932CC, #FF00FF  );
 }
 
-.calculator-grid {
+.calculator-grid {  
     display: grid;
     justify-content: center;
     align-content: center;
